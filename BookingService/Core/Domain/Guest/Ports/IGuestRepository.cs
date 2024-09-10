@@ -1,6 +1,11 @@
-﻿namespace Domain.Guest.Ports
+﻿using Domain.Entities;
+
+namespace Domain.Ports
 {
-    public class IGuestRepository
+    public interface IGuestRepository
     {
+        Task<Guest> Get(int Id);
+        Task<int> Create(Guest guest);
+
     }
 }
