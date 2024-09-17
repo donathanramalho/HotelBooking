@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="MercadoPago\" />
+    <Folder Include="PicPay\" />
+    <Folder Include="Paypal\" />
+  </ItemGroup>
+
 </Project>

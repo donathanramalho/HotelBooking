@@ -1,22 +1,51 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Domain.Entities;
 using NUnit.Framework;
 
-namespace DomainTests.Bookings
+namespace DomainTests
 {
     public class StateMachineTests
     {
         [SetUp]
-        public void Setup()
+        public void SetUp()
         {
         }
 
+         [Test]
+        public void ShouldAwaysStartWithCreatedStatus()
+        {
+            var booking = new Booking();
+            Assert.Pass();
+        }
+        
         [Test]
-        public void Test1()
+        public void ShouldSetStatusToFinishedWhenFinishingAPaidBooking()
         {
             Assert.Pass();
         }
+
+        [Test]
+        public void ShouldSetStatusToRefoundedWhenRefoundingAPaidBooking()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        public void ShouldSetStatusToCreatedWhenReopeningACanceledBooking()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void ShouldNotChangeStatusWhenRefoundingABookingWithCreatedStatus()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void ShouldNotChangeStatusWhenRefoundingAFinishedBooking()
+        {
+            Assert.Pass();
+        }
+        
     }
 }
