@@ -1,0 +1,11 @@
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\bin\Debug\net8.0\Application.dll
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\Application.dll
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\donat\OneDrive\Área de Trabalho\HotelBooking-master\BookingService\Core\Application\obj\Debug\net8.0\ref\Application.dll

@@ -1,26 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\",
+  "WorkspaceRootPath": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{441D65CC-4693-47BC-84B5-461277E273E7}|BookingService\\Core\\Application\\Application\\Application.csproj|c:\\users\\joyce\\source\\repos\\hotelbooking\\bookingservice\\core\\application\\application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{441D65CC-4693-47BC-84B5-461277E273E7}|BookingService\\Core\\Application\\Application\\Application.csproj|solutionrelative:bookingservice\\core\\application\\application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|c:\\users\\joyce\\source\\repos\\hotelbooking\\bookingservice\\core\\domain\\domain\\payment\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|solutionrelative:bookingservice\\core\\domain\\domain\\payment\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|c:\\users\\joyce\\source\\repos\\hotelbooking\\bookingservice\\core\\domain\\domain\\room\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|solutionrelative:bookingservice\\core\\domain\\domain\\room\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|c:\\users\\joyce\\source\\repos\\hotelbooking\\bookingservice\\core\\domain\\domain\\guest\\entities\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|solutionrelative:bookingservice\\core\\domain\\domain\\guest\\entities\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|c:\\users\\joyce\\source\\repos\\hotelbooking\\bookingservice\\core\\domain\\domain\\booking\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain\\Domain.csproj|solutionrelative:bookingservice\\core\\domain\\domain\\booking\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE0A851E-E2C6-47ED-A563-5ECA05E41E11}|BookingService\\Tests\\Domain\\DomainTests\\DomainTests\\DomainTests.csproj|c:\\users\\donat\\onedrive\\\u00E1rea de trabalho\\matheus\\hotelbooking\\bookingservice\\tests\\domain\\domaintests\\domaintests\\bookings\\statemachinetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE0A851E-E2C6-47ED-A563-5ECA05E41E11}|BookingService\\Tests\\Domain\\DomainTests\\DomainTests\\DomainTests.csproj|solutionrelative:bookingservice\\tests\\domain\\domaintests\\domaintests\\bookings\\statemachinetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Application\\Class1.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Application\\Application\\Class1.cs",
-              "ToolTip": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Application\\Class1.cs",
-              "RelativeToolTip": "BookingService\\Core\\Application\\Application\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "StateMachineTests.cs",
+              "DocumentMoniker": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Tests\\Domain\\DomainTests\\DomainTests\\Bookings\\StateMachineTests.cs",
+              "RelativeDocumentMoniker": "BookingService\\Tests\\Domain\\DomainTests\\DomainTests\\Bookings\\StateMachineTests.cs",
+              "ToolTip": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Tests\\Domain\\DomainTests\\DomainTests\\Bookings\\StateMachineTests.cs",
+              "RelativeToolTip": "BookingService\\Tests\\Domain\\DomainTests\\DomainTests\\Bookings\\StateMachineTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T22:42:20.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Room\\Entities\\Room.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Domain\\Domain\\Room\\Entities\\Room.cs",
-              "ToolTip": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Room\\Entities\\Room.cs",
-              "RelativeToolTip": "BookingService\\Core\\Domain\\Domain\\Room\\Entities\\Room.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T00:39:57.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Payment\\Entities\\Payment.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Domain\\Domain\\Payment\\Entities\\Payment.cs",
-              "ToolTip": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Payment\\Entities\\Payment.cs",
-              "RelativeToolTip": "BookingService\\Core\\Domain\\Domain\\Payment\\Entities\\Payment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T00:39:41.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Guest.cs",
-              "DocumentMoniker": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Guest\\Entities\\Guest.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Domain\\Domain\\Guest\\Entities\\Guest.cs",
-              "ToolTip": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Guest\\Entities\\Guest.cs",
-              "RelativeToolTip": "BookingService\\Core\\Domain\\Domain\\Guest\\Entities\\Guest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T00:38:23.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Booking\\Entities\\Booking.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Domain\\Domain\\Booking\\Entities\\Booking.cs",
-              "ToolTip": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain\\Booking\\Entities\\Booking.cs",
-              "RelativeToolTip": "BookingService\\Core\\Domain\\Domain\\Booking\\Entities\\Booking.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T00:36:24.546Z",
+              "WhenOpened": "2024-09-17T23:46:56.292Z",
               "EditorCaption": ""
             }
           ]

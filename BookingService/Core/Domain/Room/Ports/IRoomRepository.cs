@@ -1,6 +1,6 @@
 ﻿namespace Domain.Ports
 {
-    public class IRoomRepository
+    public interface IRoomRepository
     {
     }
 }

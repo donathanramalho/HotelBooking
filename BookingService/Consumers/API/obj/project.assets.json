@@ -428,24 +428,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joyce\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\donat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\joyce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Consumers\\API\\obj\\",
+      "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Consumers\\API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\joyce\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\donat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -501,7 +496,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj": {}
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj": {
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj",
+        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj",
         "projectName": "AdaptersTests",
-        "projectPath": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj",
-        "packagesPath": "C:\\Users\\joyce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joyce\\source\\repos\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\obj\\",
+        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\AdaptersTests.csproj",
+        "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Tests\\AdaptersTests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\joyce\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\donat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

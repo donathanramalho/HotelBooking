@@ -1,6 +1,6 @@
 ﻿namespace Domain.Ports
 {
-    public class IBookingRepository
+    public interface IBookingRepository
     {
     }
 }

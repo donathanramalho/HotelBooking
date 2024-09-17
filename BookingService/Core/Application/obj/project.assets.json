@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\god2ct\\.nuget\\packages\\": {}
+    "C:\\Users\\donat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\god2ct\\Desktop\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\god2ct\\Desktop\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\god2ct\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\god2ct\\Desktop\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Application\\obj\\",
+      "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\matheus\\HotelBooking\\BookingService\\Core\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\god2ct\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\donat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
