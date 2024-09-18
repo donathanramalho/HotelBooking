@@ -18,7 +18,7 @@ namespace Domain.Entities
 
         public Status Status { get; set; }
         public Status CurrentStatus { 
-            get{ return this.Status;} 
+            get{ return this.Status; } 
         }
 
         //Máquina de estado - POO

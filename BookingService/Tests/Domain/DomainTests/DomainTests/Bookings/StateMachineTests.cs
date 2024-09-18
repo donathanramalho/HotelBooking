@@ -1,8 +1,7 @@
 
 using Domain.Entities;
 using Domain.Enums;
-using NUnit.Framework;
-
+using Action = Domain.Enums.Action;
 
 namespace DomainTests
 {
@@ -21,42 +20,66 @@ namespace DomainTests
             Assert.AreEqual(booking.Status, Status.Created);
         }
 
-        //Definir status como pago ao pagar por uma reserva com status criado
         [Test]
         public void ShouldSetStatusToFinishedWhenFinishingAPaidBooking()
         {
-            Assert.Pass();
+            var booking = new Booking();
+            booking.ChangeState(Action.Pay);
+            Assert.AreEqual(booking.Status, Status.Paid);
+        }
+
+        //Definir status como cancelado...
+        [Test]
+        public void ShouldSetStatusToCanceledWhenCancelingABookingWithCreatedStatus()
+        {
+            var booking = new Booking();
+
+            booking.ChangeState(Action.Cancel);
+            Assert.AreEqual(booking.Status, Status.Canceled);
         }
 
         //Definir status como concluido ao finalizar uma reserva paga
         [Test]
         public void ShouldSetStatusToRefoundedWhenRefoundingAPaidBooking()
         {
-            Assert.Pass();
+            var booking = new Booking();
+
+            booking.ChangeState(Action.Pay);
+            booking.ChangeState(Action.Refound);
+            Assert.AreEqual(booking.Status, Status.Refounded);
         }
 
         //Definir o status como criado ao reabrir uma reserva
         [Test]
         public void ShouldSetStatusToCreatedWhenReopeningACanceledBooking()
         {
-            Assert.Pass();
+            var booking = new Booking();
+
+            booking.ChangeState(Action.Reopen);
+            Assert.AreEqual(booking.Status, Status.Created);
         }
 
         //Não alterar status ao reabrir uma reserva com status criado
         [Test]
         public void ShouldNotChangeStatusWhenRefoundingABookingWithCreatedStatus()
         {
-            Assert.Pass();
+            var booking = new Booking();
+
+            booking.ChangeState(Action.Refound);
+            Assert.AreEqual(booking.Status, Status.Created);
         }
 
         //Não alterar status ao abrir uma reserva concluída
         [Test]
         public void ShouldNotChangeStatusWhenRefoundingAFinishedBooking()
         {
-            Assert.Pass();
+            var booking = new Booking();
+
+            booking.ChangeState(Action.Pay);
+            booking.ChangeState(Action.Finish);
+            booking.ChangeState(Action.Refound);
+            Assert.AreEqual(booking.Status, Status.Finished);
         }
-
-
 
     }
 }
