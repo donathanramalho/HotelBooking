@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Adapters\\Data\\Migrations\\20240925004932_AddFKToBooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookingService\\Adapters\\Data\\Migrations\\20240925004932_AddFKToBooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain.csproj|c:\\users\\donat\\onedrive\\\u00E1rea de trabalho\\matheus\\hotelbooking\\bookingservice\\core\\domain\\booking\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF840A3-CDCE-4D66-AB14-79751686E8B8}|BookingService\\Core\\Domain\\Domain.csproj|solutionrelative:bookingservice\\core\\domain\\booking\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD6DE8B-94E9-4EDB-A348-8DE3F3B3CCBD}|BookingService\\Consumers\\API\\API.csproj|c:\\users\\donat\\onedrive\\\u00E1rea de trabalho\\matheus\\hotelbooking\\bookingservice\\consumers\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD6DE8B-94E9-4EDB-A348-8DE3F3B3CCBD}|BookingService\\Consumers\\API\\API.csproj|solutionrelative:bookingservice\\consumers\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240925004932_AddFKToBooking.cs",
+              "DocumentMoniker": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Adapters\\Data\\Migrations\\20240925004932_AddFKToBooking.cs",
+              "RelativeDocumentMoniker": "BookingService\\Adapters\\Data\\Migrations\\20240925004932_AddFKToBooking.cs",
+              "ToolTip": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Adapters\\Data\\Migrations\\20240925004932_AddFKToBooking.cs",
+              "RelativeToolTip": "BookingService\\Adapters\\Data\\Migrations\\20240925004932_AddFKToBooking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T00:49:32.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Consumers\\API\\Program.cs",
+              "RelativeDocumentMoniker": "BookingService\\Consumers\\API\\Program.cs",
+              "ToolTip": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Consumers\\API\\Program.cs",
+              "RelativeToolTip": "BookingService\\Consumers\\API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T00:44:00.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Core\\Domain\\Booking\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "BookingService\\Core\\Domain\\Booking\\Entities\\Booking.cs",
+              "ToolTip": "C:\\Users\\donat\\OneDrive\\\u00C1rea de Trabalho\\matheus\\HotelBooking\\BookingService\\Core\\Domain\\Booking\\Entities\\Booking.cs",
+              "RelativeToolTip": "BookingService\\Core\\Domain\\Booking\\Entities\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T00:43:57.126Z",
+              "EditorCaption": ""
             }
           ]
         }
