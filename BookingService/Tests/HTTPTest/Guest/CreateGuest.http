@@ -1,0 +1,11 @@
+POST http://localhost:5035/guest HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "name": "Paulo",
+    "surname": "Lisecki",
+    "email": "paulolisecki@gmail.com",
+    "idNumber": "123456789",
+    "documentType": 1
+}

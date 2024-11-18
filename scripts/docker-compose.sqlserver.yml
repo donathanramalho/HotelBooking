@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+      - MSSQL_USER=sa
+      - MSSQL_PASSWORD=_4l3x4ndr3D3M0r415 # Replace with a strong password
+      - MSSQL_DATABASE=HotelDemo # Set initial database name to HotelDemo
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    restart: always
+
+volumes:
+  sqlserver_data:
