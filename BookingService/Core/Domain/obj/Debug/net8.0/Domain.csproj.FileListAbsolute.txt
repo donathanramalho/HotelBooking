@@ -1,0 +1,35 @@
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Shared.dll
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Shared.pdb
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.csproj.Up2Date
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+C:\Users\god2ct\Desktop\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Shared.dll
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\Shared.pdb
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.csproj.Up2Date
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\donat\OneDrive\Área de Trabalho\ArqSoft-BookingPontoUAU-47bfc9bbec5243c4a4716d13d77748121c433143\BookingService\Core\Domain\bin\Debug\net8.0\CoverletSourceRootsMapping_Domain
