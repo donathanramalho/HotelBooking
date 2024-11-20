@@ -1,16 +1,52 @@
-﻿using Domain.Rooms.ValueObjects;
+﻿using Domain.Exceptions;
+using Domain.Room.Exceptions;
+using Domain.Room.ValueObjects;
 
-namespace Domain.Rooms.Entities;
-public class Room
+namespace Domain.Entities
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public int Level { get; set; }
-    public bool IsInMaintenance { get; set; }
+    public class Room
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Level { get; set; }
+        public bool InMaintenance { get; set; }
 
-    public required Price Price { get; set; }
+        public Price Price { get; set; }
 
-    public bool IsAvailable => IsInMaintenance || HasGuest;
+        public IList<Booking> Bookings { get; set; }
 
-    public static bool HasGuest => true;
+        public void Validate()
+        {
+            if (string.IsNullOrEmpty(Name) || Level == null || Price.Value == null || Price.Currency == null)
+            {
+                throw new MissingRequiredInformationException();
+            }
+
+            if (Price.Value < 0)
+            {
+                throw new InvalidPriceException();
+            }
+        }
+
+        public bool IsAvailable
+        {
+            get
+            {
+                if (this.InMaintenance || HasGuest)
+                {
+                    return false;
+                }
+                return true;
+            }
+
+        }
+
+        public bool HasGuest
+        {
+            get
+            {
+                return true;
+            }
+        }
+    }
 }

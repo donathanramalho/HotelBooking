@@ -1,6 +1,6 @@
 ﻿using Application.Dtos;
 
-namespace Application.Responses
+namespace Application.Room.Responses
 {
     public class RoomResponse : Response
     {

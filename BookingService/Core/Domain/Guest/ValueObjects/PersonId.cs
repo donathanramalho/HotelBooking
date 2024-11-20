@@ -1,8 +1,10 @@
-﻿using Domain.Guests.Enums;
+﻿using Domain.Enums;
 
-namespace Domain.Guests.ValueObjects;
-public class PersonId
+namespace Domain.ValueObjects
 {
-    public string IdNumber { get; set; }
-    public DocumentType DocumentType { get; set; }
+    public class PersonId
+    {
+        public string IdNumber { get; set; }
+        public DocumentType DocumentType { get; set; }
+    }
 }

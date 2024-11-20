@@ -1,11 +1,9 @@
-﻿using Application.Guests.Dtos;
+using Application.Dtos;
 
-namespace Application.Guests.Requests
+namespace Application.Guest.Requests
 {
     public class UpdateGuestRequest
     {
-        public GuestDto? Data;
-
-        public int GuestId { get; set; }
+        public GuestDto Data;
     }
 }

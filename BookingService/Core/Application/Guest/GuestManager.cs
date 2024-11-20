@@ -1,38 +1,33 @@
-﻿using Application.Guests.Dtos;
-using Application.Guests.Requests;
+﻿using Application.Dtos;
+using Application.Guest.Requests;
+using Application.Guest.Responses;
 using Application.Ports;
 using Application.Responses;
-using AutoMapper;
-using Domain.Guests.Exceptions;
-using Domain.Guests.Ports;
+using Domain.Exceptions;
+using Domain.Ports;
 
-namespace Application.Guests
+namespace Application.Guest
 {
     public class GuestManager : IGuestManager
     {
-        private readonly IGuestRepository _guestRepository;
-        private readonly IMapper _mapper;
+        private IGuestRepository _guestRepository;
 
-        public GuestManager(IGuestRepository guestRepository, IMapper mapper)
+        public GuestManager(IGuestRepository guestRepository)
         {
             _guestRepository = guestRepository;
-            _mapper = mapper;
         }
+
         public async Task<GuestResponse> CreateGuest(CreateGuestRequest request)
         {
             try
             {
                 var guest = GuestDto.MapToEntity(request.Data);
 
-                request.Data.Id = guest.Id;
-                var createdGuest = _guestRepository.Create(guest);
-
-                var createdGuestDto = new GuestDto();
-                _mapper.Map(createdGuest, createdGuestDto);
+                await guest.Save(_guestRepository);
 
                 return new GuestResponse
                 {
-                    Data = createdGuestDto,
+                    Data = request.Data,
                     Success = true,
                 };
             }
@@ -42,16 +37,16 @@ namespace Application.Guests
                 {
                     Success = false,
                     ErrorCode = ErrorCode.INVALID_PERSON_ID,
-                    Message = "The passed ID is not valid"
+                    Message = "ID not valid"
                 };
             }
-            catch (MissingRequiredInformation)
+            catch (MissingRequiredInformationException)
             {
                 return new GuestResponse
                 {
                     Success = false,
                     ErrorCode = ErrorCode.MISSING_REQUIRED_INFORMATION,
-                    Message = "Missing passed required information"
+                    Message = "Missing information"
                 };
             }
             catch (InvalidEmailException)
@@ -60,7 +55,7 @@ namespace Application.Guests
                 {
                     Success = false,
                     ErrorCode = ErrorCode.INVALID_EMAIL,
-                    Message = "The given email is not valid"
+                    Message = "Email is not valid"
                 };
             }
             catch (Exception)
@@ -71,12 +66,39 @@ namespace Application.Guests
                     ErrorCode = ErrorCode.COULD_NOT_STORE_DATA,
                     Message = "There was an error when saving to DB"
                 };
+
+                throw;
             }
         }
 
-        public Task<BookingResponse> DeleteGuest(int GuestId)
+        public async Task<GuestListResponse> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var guests = await this._guestRepository.GetAll();
+
+                var list = new List<GuestDto>();
+
+                foreach (var guest in guests)
+                {
+                    list.Add(GuestDto.MapToDto(guest));
+                }
+
+                return new GuestListResponse()
+                {
+                    Success = true,
+                    Data = list,
+                };
+            }
+            catch (Exception)
+            {
+                return new GuestListResponse()
+                {
+                    Success = false,
+                    ErrorCode = ErrorCode.COULD_NOT_RETRIEVE_DATA,
+                    Message = "There was an error when saving to DB"
+                };
+            }
         }
 
         public async Task<GuestResponse> GetGuest(int guestId)
@@ -100,14 +122,87 @@ namespace Application.Guests
             };
         }
 
-        public Task<BookingResponse> GetGuests()
+        public async Task<GuestResponse> RemoveGuest(int guestId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var deleted = await _guestRepository.Delete(guestId);
+
+                return new GuestResponse()
+                {
+                    Success = true,
+                    Data = GuestDto.MapToDto(deleted),
+                };
+            }
+            catch (NotFoundException)
+            {
+                return new GuestResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCode.GUEST_NOT_FOUND
+                };
+            }
+            catch (Exception)
+            {
+                return new GuestResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCode.COULD_NOT_DELETE_DATA
+                };
+            }
         }
 
-        public Task<BookingResponse> UpdateGuest(UpdateGuestRequest request)
+        public async Task<GuestResponse> UpdateGuest(UpdateGuestRequest request)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var guest = GuestDto.MapToEntity(request.Data);
+
+                await guest.Save(_guestRepository);
+
+                return new GuestResponse()
+                {
+                    Data = request.Data,
+                    Success = true,
+                };
+            }
+            catch (InvalidPersonDocumentIdException)
+            {
+                return new GuestResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCode.INVALID_PERSON_ID,
+                    Message = "ID is not valid"
+                };
+            }
+            catch (MissingRequiredInformationException)
+            {
+                return new GuestResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCode.MISSING_REQUIRED_INFORMATION,
+                    Message = "Missing information"
+                };
+            }
+            catch (InvalidEmailException)
+            {
+                return new GuestResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCode.INVALID_EMAIL,
+                    Message = "Email is not valid"
+                };
+            }
+            catch (Exception)
+            {
+                return new GuestResponse
+                {
+                    Success = false,
+                    ErrorCode = ErrorCode.COULD_NOT_STORE_DATA,
+                    Message = "There was an error when saving to DB"
+                };
+            }
         }
     }
+
 }

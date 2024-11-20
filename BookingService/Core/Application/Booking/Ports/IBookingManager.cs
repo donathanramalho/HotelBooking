@@ -1,4 +1,5 @@
-﻿using Application.Bookings.Requests;
+﻿using Application.Booking.Requests;
+using Application.Booking.Responses;
 using Application.Responses;
 
 namespace Application.Ports
@@ -6,9 +7,9 @@ namespace Application.Ports
     public interface IBookingManager
     {
         Task<BookingResponse> CreateBooking(CreateBookingRequest request);
-        Task<BookingResponse> GetBookings();
         Task<BookingResponse> GetBooking(int bookingId);
-        Task<BookingResponse> DeleteBooking(int bookingId);
-        Task<BookingResponse> UpdateBooking(UpdateBookingRequest request);
+        Task<BookingListResponse> GetAllBooking();
+        Task<BookingResponse> RemoveBooking(int bookingId);
+        Task<BookingResponse> UpdateBooking(CreateBookingRequest request);
     }
 }

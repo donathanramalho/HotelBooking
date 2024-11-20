@@ -1,6 +1,8 @@
-﻿namespace Domain.Guests.Enums;
-    public enum DocumentType
+﻿namespace Domain.Enums
 {
-    Passport = 1,
-    DriveLicence = 2
+    public enum DocumentType
+    {
+        Passport = 1,
+        DriveLicence = 2
+    }
 }

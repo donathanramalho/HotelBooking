@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj": {}
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj": {
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Adapters\\Data\\obj\\",
+        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Adapters\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -56,33 +56,23 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[8.0.8, )"
             }
           },
           "imports": [
@@ -105,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj": {
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
+        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Consumers\\API\\API.csproj",
         "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Consumers\\API\\obj\\",
+        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Consumers\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -133,11 +123,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj"
+              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Adapters\\Data\\Data.csproj"
               },
-              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj"
+              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj"
+              },
+              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -162,21 +155,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.8, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -202,14 +185,14 @@
         }
       }
     },
-    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj": {
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Application\\obj\\",
+        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -230,8 +213,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj"
+              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj"
               }
             }
           }
@@ -251,36 +234,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -301,14 +254,14 @@
         }
       }
     },
-    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -329,8 +282,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj"
+              "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj"
               }
             }
           }
@@ -351,35 +304,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[8.0.8, )"
             }
           },
           "imports": [
@@ -402,14 +331,14 @@
         }
       }
     },
-    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj": {
+    "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\HotelBook\\HotelBooking\\BookingService\\Core\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\donat\\OneDrive\\Área de Trabalho\\API\\HotelBooking\\BookingService\\Core\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -447,38 +376,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "coverlet.collector": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

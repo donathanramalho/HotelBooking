@@ -1,5 +1,6 @@
-﻿namespace Domain.Payments.Ports;
-public interface IPaymentRepository
+﻿namespace Domain.Ports
 {
-    
+    public interface IPaymentRepository
+    {
+    }
 }

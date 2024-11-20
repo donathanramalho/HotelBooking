@@ -1,5 +1,5 @@
 
-using Domain.Bookings.Entities;
+using Domain.Entities;
 using NUnit.Framework;
 
 
@@ -13,13 +13,13 @@ namespace DomainTests
         }
 
         //Iniciar status como criado
-        [Test]
+         [Test]
         public void ShouldAwaysStartWithCreatedStatus()
         {
             var booking = new Booking();
             Assert.Pass();
         }
-
+        
         //Definir status como pago ao pagar por uma reserva com status criado
         [Test]
         public void ShouldSetStatusToFinishedWhenFinishingAPaidBooking()
@@ -40,22 +40,22 @@ namespace DomainTests
         {
             Assert.Pass();
         }
-
+        
         //Não alterar status ao reabrir uma reserva com status criado
         [Test]
         public void ShouldNotChangeStatusWhenRefoundingABookingWithCreatedStatus()
         {
             Assert.Pass();
         }
-
+        
         //Não alterar status ao abrir uma reserva concluída
         [Test]
         public void ShouldNotChangeStatusWhenRefoundingAFinishedBooking()
         {
             Assert.Pass();
         }
-
-
+        
+    
 
     }
 }

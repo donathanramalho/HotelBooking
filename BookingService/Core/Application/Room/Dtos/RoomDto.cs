@@ -1,56 +1,42 @@
-﻿using Domain.Rooms.Entities;
-using Domain.Rooms.Enums;
-using Domain.Rooms.ValueObjects;
+﻿using Domain.Room.Enums;
 
 namespace Application.Dtos
 {
     public class RoomDto
     {
-        public string Name { get; set; } = string.Empty;
+        public string Name { get; set; }
         public int Level { get; set; }
-        public bool IsInMaintenance { get; set; }
-        public decimal Price { get; set; }
-        public required string Currency { get; set; }
+        public bool InMaintenance { get; set; }
+        public decimal PriceValue { get; set; }
+        public AcceptedCurrencies Currency { get; set; }
 
-        public static Room MapToEntity(RoomDto roomDto)
+        public static Domain.Entities.Room MapToEntity(RoomDto roomDto)
         {
-            try
+            return new Domain.Entities.Room
             {
-                if (!Enum.TryParse<AcceptedCurrencies>(roomDto.Currency, ignoreCase: true, out var currency))
+                Name = roomDto.Name,
+                Level = roomDto.Level,
+                InMaintenance = roomDto.InMaintenance,
+                Price = new Domain.Room.ValueObjects.Price
                 {
-                    throw new ArgumentException($"Invalid currency value: {roomDto.Currency}");
+                    Value = roomDto.PriceValue,
+                    Currency = roomDto.Currency
                 }
-
-                var room = new Room
-                {
-                    Name = roomDto.Name,
-                    Level = roomDto.Level,
-                    IsInMaintenance = roomDto.IsInMaintenance,
-                    Price = new Price(roomDto.Price, currency)
-                };
-
-                return room;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error in MapToEntity: {ex.Message}");
-                throw;
-            }
+            };
         }
 
-        public static RoomDto MapToDto(Room room)
+        public static RoomDto MapToDto(Domain.Entities.Room room)
         {
             return new RoomDto
             {
                 Name = room.Name,
                 Level = room.Level,
-                IsInMaintenance = room.IsInMaintenance,
-                Price = room.Price.Value,
-                Currency = room.Price.Currency.ToString()
+                InMaintenance = room.InMaintenance,
+                PriceValue = room.Price.Value,
+                Currency = room.Price.Currency
             };
         }
     }
+
+
 }
-
-
-

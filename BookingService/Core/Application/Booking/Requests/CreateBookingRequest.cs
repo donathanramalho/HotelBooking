@@ -1,9 +1,10 @@
-﻿using Application.Bookings.Dtos;
 
-namespace Application.Bookings.Requests
+using Application.Dtos;
+
+namespace Application.Booking.Requests
 {
     public class CreateBookingRequest
     {
-        public BookingDto? Data;
+        public BookingDto Data;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Domain.Guests.Exceptions;
-public class InvalidEmailException : Exception
+﻿namespace Domain.Exceptions
 {
+    public class InvalidEmailException : Exception
+    {
+    }
 }

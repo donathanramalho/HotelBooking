@@ -1,12 +1,13 @@
+﻿using Application.Booking;
+using Application.Booking.Requests;
+using Application.Dtos;
 using Application.Ports;
 using Microsoft.AspNetCore.Mvc;
-using Application.Bookings.Dtos;
-using Application.Bookings.Requests;
 
 namespace API.Controllers
 {
     [ApiController]
-    [Route("booking")]
+    [Route("[controller]")]
     public class BookingController : ControllerBase
     {
         private readonly ILogger<BookingController> _logger;
@@ -18,78 +19,99 @@ namespace API.Controllers
         {
             _logger = logger;
             _bookingManager = bookingManager;
-        }
 
-        [NonAction]
-        public IBookingManager Get_bookingManager()
-        {
-            return _bookingManager;
         }
 
         [HttpPost]
-        public async Task<ActionResult<BookingDto>> Post(BookingDto booking)
+        public async Task<ActionResult<BookingDto>> Post(BookingDto guest)
         {
-
             var resquest = new CreateBookingRequest
             {
-                Data = booking,
+                Data = guest,
             };
 
             var res = await _bookingManager.CreateBooking(resquest);
 
             if (res.Success) return Created("", res.Data);
 
-            _logger.LogError("Response with unkwn ErrorCode Returned", res);
-            return BadRequest();
-
+            return BadRequest(res);
         }
 
         [HttpGet]
-        public async Task<ActionResult<BookingDto>> Get()
+        public async Task<ActionResult<BookingDto>> Get(int guestId)
         {
-            var res = await _bookingManager.GetBookings();
-
-            if (res.Success) return Ok(res.Data);
-
-            return NotFound(res);
-        }
-
-        [HttpGet("{bookingId}")]
-        public async Task<ActionResult<BookingDto>> GetById(int bookingId)
-        {
-            var res = await _bookingManager.GetBooking(bookingId);
+            var res = await _bookingManager.GetBooking(guestId);
 
             if (res.Success) return Created("", res.Data);
 
             return NotFound(res);
         }
 
-        [HttpPut("{bookingId}")]
-        public async Task<ActionResult<BookingDto>> Update(int bookingId, BookingDto booking)
+        [HttpGet("GetAll")]
+        public async Task<ActionResult> GetAll()
         {
-            var request = new UpdateBookingRequest
+            var res = await _bookingManager.GetAllBooking();
+
+            if (res.Success) return Ok(res.Data);
+
+            return BadRequest(res);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult<BookingDto>> Delete(int bookingId)
+        {
+            var res = await _bookingManager.RemoveBooking(bookingId);
+
+            if (res.Success) return Ok(res.Data);
+
+            if (res.ErrorCode == Application.ErrorCode.GUEST_NOT_FOUND)
             {
-                BookingId = bookingId,
-                Data = booking
+                return NotFound(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.COULD_NOT_DELETE_DATA)
+            {
+                return BadRequest(res);
+            }
+
+            _logger.LogError("Response with unknown ErrorCode Returned");
+            return BadRequest();
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<BookingDto>> Update(BookingDto dto)
+        {
+            var request = new CreateBookingRequest
+            {
+                Data = dto,
             };
 
             var res = await _bookingManager.UpdateBooking(request);
 
             if (res.Success) return Ok(res.Data);
 
-            _logger.LogError("Failed to update booking with ID {BookingId}", bookingId);
+            if (res.ErrorCode == Application.ErrorCode.NOT_FOUND)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.INVALID_PERSON_ID)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.MISSING_REQUIRED_INFORMATION)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.INVALID_EMAIL)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.COULD_NOT_STORE_DATA)
+            {
+                return BadRequest(res);
+            }
+
+            _logger.LogError("Response with unknown ErrorCode Returned");
             return BadRequest();
-        }
-
-        [HttpDelete("{bookingId}")]
-        public async Task<ActionResult<BookingDto>> Delete(int bookingId)
-        {
-            var res = await _bookingManager.DeleteBooking(bookingId);
-
-            if (res.Success) return NoContent();
-
-            _logger.LogError("Failed to delete booking with ID {BookingId}", bookingId);
-            return NotFound(res);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Application.Bookings.Dtos;
+﻿using Application.Dtos;
 
 namespace Application.Responses
 {

@@ -1,9 +1,9 @@
-﻿using Application.Guests.Dtos;
+﻿using Application.Dtos;
 
-namespace Application.Guests.Requests
+namespace Application.Guest.Requests
 {
     public class CreateGuestRequest
     {
-        public GuestDto? Data;
+        public GuestDto Data;
     }
 }

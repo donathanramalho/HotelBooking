@@ -1,23 +1,20 @@
-﻿using Domain.Guests.Entities;
-using Domain.Guests.Enums;
-using Domain.Guests.ValueObjects;
+﻿using Domain.Enums;
+using Domain.ValueObjects;
 
-namespace Application.Guests.Dtos
+namespace Application.Dtos
 {
     public class GuestDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
         public string IdNumber { get; set; }
         public int IdTypeCode { get; set; }
 
-        public static Guest MapToEntity(GuestDto guestDto)
+        public static Domain.Entities.Guest MapToEntity(GuestDto guestDto)
         {
-            return new Guest
+            return new Domain.Entities.Guest
             {
-                Id = guestDto.Id,
                 Name = guestDto.Name,
                 Surname = guestDto.Surname,
                 Email = guestDto.Email,
@@ -30,11 +27,10 @@ namespace Application.Guests.Dtos
 
         }
 
-        public static GuestDto MapToDto(Guest guest)
+        public static GuestDto MapToDto(Domain.Entities.Guest guest)
         {
             return new GuestDto
             {
-                Id = guest.Id,
                 Name = guest.Name,
                 Surname = guest.Surname,
                 Email = guest.Email,

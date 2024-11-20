@@ -1,123 +1,147 @@
-using Application.Ports;
-using Microsoft.AspNetCore.Mvc;
 using Application.Dtos;
-using Application.Rooms.Requests;
+using Application.Ports;
+using Application.Room.Requests;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
     [ApiController]
-    [Route("room")]
+    [Route("[controller]")]
     public class RoomController : ControllerBase
     {
-        private readonly ILogger<RoomController> _logger;
+        private readonly ILogger<BookingController> _logger;
         private readonly IRoomManager _roomManager;
 
         public RoomController(
-            ILogger<RoomController> logger,
+            ILogger<BookingController> logger,
             IRoomManager roomManager)
         {
             _logger = logger;
             _roomManager = roomManager;
         }
 
-        [NonAction]
-        public IRoomManager Get_roomManager()
-        {
-            return _roomManager;
-        }
-
         [HttpPost]
-        public async Task<ActionResult<RoomDto>> Post(RoomDto roomDto)
+        public async Task<IActionResult> Post(RoomDto room)
         {
-            try
+            var resquest = new CreateRoomRequest
             {
-                if (string.IsNullOrEmpty(roomDto.Name) || roomDto.Price <= 0)
-                {
-                    _logger.LogWarning("Invalid RoomDto provided: {@RoomDto}", roomDto);
-                    return BadRequest(new { message = "Invalid room data." });
-                }
+                Data = room,
+            };
 
-                // Mapear o DTO para a entidade
-                _logger.LogInformation("Mapping RoomDto to Room entity: {@RoomDto}", roomDto);
-                var room = RoomDto.MapToEntity(roomDto);
+            var res = await _roomManager.CreateRoom(resquest);
 
-                // Simulação: Adicione lógica de salvamento aqui
-                _logger.LogInformation("Room successfully mapped and ready for database: {@Room}", room);
+            if (res.Success) return Created("", res.Data);
 
-                return Created("", roomDto);
-            }
-            catch (ArgumentException ex)
+            if (res.ErrorCode == Application.ErrorCode.NOT_FOUND)
             {
-                _logger.LogError("Validation error: {Message}", ex.Message);
-                return BadRequest(new { message = "Validation error", details = ex.Message });
+                return BadRequest(res);
             }
-            catch (Exception ex)
+            else if (res.ErrorCode == Application.ErrorCode.INVALID_PERSON_ID)
             {
-                _logger.LogError("Unexpected error occurred: {Message}\nStackTrace: {StackTrace}", ex.Message, ex.StackTrace);
-                return StatusCode(500, new { message = "Internal Server Error", details = ex.Message });
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.MISSING_REQUIRED_INFORMATION)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.INVALID_EMAIL)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.COULD_NOT_STORE_DATA)
+            {
+                return BadRequest(res);
             }
 
-            //var resquest = new CreateRoomRequest
-            //{
-            //    Data = room,
-            //};
-
-            //var res = await _roomManager.CreateRoom(resquest);
-
-            //if (res.Success) return Created("", res.Data);
-
-            //_logger.LogError("Response with unkwn ErrorCode Returned", res);
-            //return BadRequest();
-
+            _logger.LogError("Response with unknown ErrorCode Returned");
+            return BadRequest();
         }
 
         [HttpGet]
-        public async Task<ActionResult<RoomDto>> Get()
+        public async Task<ActionResult<GuestDto>> Get(int guestId)
         {
-            var res = await _roomManager.GetRooms();
-
-            if (res.Success) return Ok(res.Data);
-
-            return NotFound(res);
-        }
-
-        [HttpGet("{roomId}")]
-        public async Task<ActionResult<RoomDto>> GetById(int roomId)
-        {
-            var res = await _roomManager.GetRoom(roomId);
+            var res = await _roomManager.GetRoom(guestId);
 
             if (res.Success) return Created("", res.Data);
 
             return NotFound(res);
         }
 
-        [HttpPut("{roomId}")]
-        public async Task<ActionResult<RoomDto>> Update(int roomId, RoomDto room)
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAll()
         {
-            var request = new UpdateRoomRequest
+            var res = await _roomManager.GetAllRooms();
+
+            if (res.Success) return Ok(res.Data);
+
+            if (res.ErrorCode == Application.ErrorCode.NOT_FOUND)
             {
-                RoomId = roomId,
-                Data = room
+                return NotFound(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.COULD_NOT_RETRIEVE_DATA)
+            {
+                return BadRequest(res);
+            }
+
+            _logger.LogError("Response with unknown ErrorCode Returned");
+            return BadRequest();
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update(RoomDto room)
+        {
+            var request = new CreateRoomRequest()
+            {
+                Data = room,
             };
 
             var res = await _roomManager.UpdateRoom(request);
 
             if (res.Success) return Ok(res.Data);
 
-            _logger.LogError("Failed to update booking with ID {BookingId}", roomId);
+            if (res.ErrorCode == Application.ErrorCode.NOT_FOUND)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.INVALID_PERSON_ID)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.MISSING_REQUIRED_INFORMATION)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.INVALID_EMAIL)
+            {
+                return BadRequest(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.COULD_NOT_STORE_DATA)
+            {
+                return BadRequest(res);
+            }
+
+            _logger.LogError("Response with unknown ErrorCode Returned");
             return BadRequest();
         }
 
-        [HttpDelete("{roomId}")]
-        public async Task<ActionResult<RoomDto>> Delete(int roomId)
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int roomId)
         {
-            var res = await _roomManager.DeleteRoom(roomId);
+            var res = await _roomManager.RemoveRoom(roomId);
 
-            if (res.Success) return NoContent();
+            if (res.Success) return Ok(res.Data);
 
-            _logger.LogError("Failed to delete booking with ID {BookingId}", roomId);
-            return NotFound(res);
+            if (res.ErrorCode == Application.ErrorCode.GUEST_NOT_FOUND)
+            {
+                return NotFound(res);
+            }
+            else if (res.ErrorCode == Application.ErrorCode.COULD_NOT_DELETE_DATA)
+            {
+                return BadRequest(res);
+            }
+
+            _logger.LogError("Response with unknown ErrorCode Returned");
+            return BadRequest();
         }
     }
-
 }

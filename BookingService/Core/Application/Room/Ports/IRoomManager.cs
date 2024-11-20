@@ -1,14 +1,15 @@
-﻿using Application.Rooms.Requests;
-using Application.Responses;
+﻿using Application.Dtos;
+using Application.Room.Requests;
+using Application.Room.Responses;
 
 namespace Application.Ports
 {
     public interface IRoomManager
     {
-        Task<RoomResponse> CreateRoom(CreateRoomRequest request);
-        Task<RoomResponse> GetRooms();
-        Task<RoomResponse> GetRoom(int roomId);
-        Task<RoomResponse> DeleteRoom(int roomId);
-        Task<RoomResponse> UpdateRoom(UpdateRoomRequest request);
+        public Task<RoomResponse> CreateRoom(CreateRoomRequest request);
+        public Task<RoomResponse> GetRoom(int id);
+        public Task<RoomListResponse> GetAllRooms();
+        public Task<RoomResponse> UpdateRoom(CreateRoomRequest request);
+        public Task<RoomResponse> RemoveRoom(int id);
     }
 }

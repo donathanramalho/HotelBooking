@@ -1,5 +1,7 @@
-﻿namespace Domain.Payments.Entities;
-public class Payment
+﻿namespace Domain.Entities
 {
-
+    public class Payment
+    {
+       
+    }
 }

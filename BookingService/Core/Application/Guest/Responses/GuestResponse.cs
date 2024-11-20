@@ -1,4 +1,4 @@
-﻿using Application.Guests.Dtos;
+﻿using Application.Dtos;
 
 namespace Application.Responses
 {

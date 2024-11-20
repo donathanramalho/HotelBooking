@@ -1,4 +1,6 @@
-﻿namespace Domain.Guests.Exceptions;
-public class InvalidPersonDocumentIdException : Exception
+﻿namespace Domain.Exceptions
 {
+    public class InvalidPersonDocumentIdException : Exception
+    {
+    }
 }

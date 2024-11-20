@@ -1,8 +1,11 @@
 ﻿
-namespace Domain.Rooms.Enums;
-public enum AcceptedCurrencies
+namespace Domain.Room.Enums
 {
-    DOLLAR = 0,
-    EURO = 1,
-    BITCOIN = 2,
+    public enum AcceptedCurrencies
+    {
+        Dolar = 0,
+        Euro = 1,
+        Bitcoin = 2,
+
+    }
 }
